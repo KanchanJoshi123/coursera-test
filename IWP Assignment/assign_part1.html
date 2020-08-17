@@ -1,0 +1,39 @@
+<!Doctype html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hello Page</title>
+	<script type="text/javascript">
+		function hello(){
+			alert("I am a VIT Student!");
+		}
+		function name1(){
+			var name=prompt("What is your name?","Eg:Nina");
+			if(name!=null && name!=""){
+				document.write("Hello "+name.toUpperCase()+" nice to meet you!");
+			}
+			var len=name.length;
+			document.write("<br>")
+			document.write("Fun  Fact! Your name has "+len+" number of letters.");
+
+		}
+	</script>
+	<style type="text/css">
+		body
+		{
+			background-color: #FFFF99;
+		}
+		input
+		{
+			background-color: #ADD8E6;
+			font-size: 40px;
+		}
+	</style>
+</head>
+<body>
+	<center>
+		<input type="button" onclick="hello()" value="Hello! Click me."><br><br>
+		<input type="button" onclick="name1()" value="Will you be my friend?If yes then Click me.">
+	</center>
+</body>
+</html>

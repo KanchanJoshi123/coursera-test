@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function Blur(){
+  var x = document.getElementById("name");
+  x.value = x.value.toLowerCase();
+}
+function Focus()
+{
+	var x = document.getElementById("age");
+	 x.style.background = "#FFFF99";
+}
+</script>
+<style type="text/css">
+	input
+	{
+		background-color: #ADD8E6;
+	}
+	p
+	{
+		font-size: 20px;
+	}
+</style>
+</head>
+<body>
+Enter your name: <input type="text" id="name" onblur="Blur()">
+Enter age:<input type="number" onfocus="Focus()" id="age">
+<p>When you leave the input field, a function is triggered which transforms the input text to Lower case.</p><br>
+<p>When the input field gets focus, a function is triggered which changes the background-color from blue to yellow.</p>
+</body>
+</html>
